@@ -1,0 +1,9 @@
+Compiling the gRPC Service Stub:
+create folder pb to store the generated go code
+
+Command:
+"protoc --proto_path=proto proto/*.proto  --go_out=plugins=grpc:pb"
+
+--proto_path for path to dir
+proto/*.proto for files to compile
+--go_out for generating Go code via plugin grpc and to store output in dir pb
